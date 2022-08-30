@@ -1,16 +1,18 @@
 import express from "express";
 import db from "./db/connection";
 import BankController from "./controllers/BankController";
+import "dotenv/config";
 
 const router =  express.Router();
 
 db();
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 app.use(express.json());
 
 router.get("/scrape", BankController.runScraper);
+router.post("/formatter", BankController.runFormatter);
 
 app.use("/api", router);
 

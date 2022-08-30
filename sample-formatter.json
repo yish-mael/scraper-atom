@@ -1,0 +1,24 @@
+{
+    "bankName": "GTBank", 
+    "bankDetails": "Guarantee Trust Bank", 
+    "customer": {
+        "fullName": "Tolu Ade",
+        "email": "tolu.adex@gmail.com",
+        "password": "secret",
+        "address": "123, Ikeja, Lagos, Nigeria.",
+        "phone": "07099909090",
+        "bvn": "0890930905094"
+    },
+    "transactions": [
+        {
+            "transactionId": "100",
+            "sender": "1010990909",
+            "beneficiary": "098898989898",
+            "amount": "$500.00",
+            "description": "Transaction details",
+            "type": "credit",
+            "dateCleared": "01-08-2022",
+            "accountType": "Savings"
+        }
+    ]
+}
