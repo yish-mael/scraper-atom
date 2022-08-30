@@ -1,8 +1,10 @@
 import express from "express";
+import db from "./db/connection";
 import BankController from "./controllers/BankController";
 
 const router =  express.Router();
 
+db();
 const app = express();
 const port = 4000;
 
