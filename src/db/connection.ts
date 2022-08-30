@@ -1,4 +1,5 @@
 import { connect } from "mongoose";
+import "dotenv/config";
 
 const DB_PASS = (process.env.PASS as string);
 
