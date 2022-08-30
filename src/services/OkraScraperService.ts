@@ -12,7 +12,7 @@ async function okraScraper()
     
     const url = 'https://bankof.okra.ng';
 
-    const browser = await puppeteer.launch({headless: false});
+    const browser = await puppeteer.launch({headless: true});
 
     const page = await browser.newPage();
 
